@@ -1,0 +1,6 @@
+framework module Pods_PenguinPay2Tests {
+  umbrella header "Pods-PenguinPay2Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
