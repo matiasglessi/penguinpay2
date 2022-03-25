@@ -3,33 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		105C0D3F025F90D0BCAEE027 /* Pods_PenguinPay2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE252A7111ABE4883849C336 /* Pods_PenguinPay2.framework */; };
 		25B321D7E60F21EEE13EFC53 /* Pods_PenguinPay2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EDE6947BB7939525223C4E /* Pods_PenguinPay2Tests.framework */; };
+		B34ED15427ECB4C9005A366F /* SendTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED15327ECB4C9005A366F /* SendTransactionViewModel.swift */; };
+		B34ED15627ECB4F1005A366F /* CountriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED15527ECB4F1005A366F /* CountriesListViewController.swift */; };
+		B34ED15827ECB51C005A366F /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED15727ECB51C005A366F /* Country.swift */; };
+		B34ED15A27ECB534005A366F /* CountriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED15927ECB534005A366F /* CountriesListViewModel.swift */; };
+		B34ED15C27ECB572005A366F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED15B27ECB572005A366F /* Session.swift */; };
+		B34ED15E27ECB587005A366F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED15D27ECB587005A366F /* APIClient.swift */; };
+		B34ED16027ECB9D9005A366F /* UIButton+Enable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED15F27ECB9D9005A366F /* UIButton+Enable.swift */; };
+		B34ED16227ED0F75005A366F /* GetCountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED16127ED0F75005A366F /* GetCountriesService.swift */; };
+		B34ED16427ED196C005A366F /* BinaryConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED16327ED196C005A366F /* BinaryConverterService.swift */; };
+		B34ED16627EDFDF8005A366F /* SendTransactionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED16527EDFDF8005A366F /* SendTransactionViewModelTests.swift */; };
+		B34ED16827EE23DB005A366F /* GetExchangeRateServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED16727EE23DB005A366F /* GetExchangeRateServiceMock.swift */; };
+		B34ED16A27EE2435005A366F /* BinaryConverterServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED16927EE2435005A366F /* BinaryConverterServiceMock.swift */; };
+		B34ED16C27EE246E005A366F /* GetCountriesServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED16B27EE246E005A366F /* GetCountriesServiceMock.swift */; };
+		B34ED16E27EE2545005A366F /* BinaryConverterServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED16D27EE2545005A366F /* BinaryConverterServiceTests.swift */; };
+		B34ED17027EE36F5005A366F /* GetCountriesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED16F27EE36F5005A366F /* GetCountriesServiceTests.swift */; };
+		B34ED17227EE3C5B005A366F /* GetExchangeRateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED17127EE3C5B005A366F /* GetExchangeRateServiceTests.swift */; };
+		B34ED17427EE3E68005A366F /* APIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED17327EE3E68005A366F /* APIClientMock.swift */; };
+		B34ED17627EE3EBE005A366F /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED17527EE3EBE005A366F /* APIClientTests.swift */; };
+		B34ED17827EE4922005A366F /* SessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED17727EE4922005A366F /* SessionMock.swift */; };
+		B34ED17F27EE4A59005A366F /* CountriesListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED17E27EE4A59005A366F /* CountriesListViewModelTests.swift */; };
+		B34ED18127EE4C3F005A366F /* DefaultBinaryConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED18027EE4C3F005A366F /* DefaultBinaryConverterService.swift */; };
+		B34ED18327EE4C56005A366F /* DefaultGetCountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED18227EE4C56005A366F /* DefaultGetCountriesService.swift */; };
+		B34ED18527EE4C69005A366F /* DefaultGetExchangeRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED18427EE4C69005A366F /* DefaultGetExchangeRateService.swift */; };
+		B34ED18827EE4CA9005A366F /* URLSessionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED18727EE4CA9005A366F /* URLSessionAPIClient.swift */; };
+		B34ED19027EE4D30005A366F /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34ED18F27EE4D30005A366F /* ExchangeRate.swift */; };
 		B3E4B1AF27E8FC4600F89E8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4B1AE27E8FC4600F89E8A /* AppDelegate.swift */; };
 		B3E4B1B127E8FC4600F89E8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4B1B027E8FC4600F89E8A /* SceneDelegate.swift */; };
-		B3E4B1B327E8FC4600F89E8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4B1B227E8FC4600F89E8A /* ViewController.swift */; };
-		B3E4B1B627E8FC4600F89E8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E4B1B427E8FC4600F89E8A /* Main.storyboard */; };
+		B3E4B1B327E8FC4600F89E8A /* SendTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4B1B227E8FC4600F89E8A /* SendTransactionViewController.swift */; };
 		B3E4B1B827E8FC4700F89E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E4B1B727E8FC4700F89E8A /* Assets.xcassets */; };
 		B3E4B1BB27E8FC4700F89E8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E4B1B927E8FC4700F89E8A /* LaunchScreen.storyboard */; };
-		B3E4B1C627E8FC4700F89E8A /* PenguinPay2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4B1C527E8FC4700F89E8A /* PenguinPay2Tests.swift */; };
-		B3E4B1D127E8FC4700F89E8A /* PenguinPay2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4B1D027E8FC4700F89E8A /* PenguinPay2UITests.swift */; };
 		B3E4B1DF27E8FDFF00F89E8A /* GetExchangeRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4B1DE27E8FDFF00F89E8A /* GetExchangeRateService.swift */; };
-		B76DAD60A4DB246BA20CD3CB /* Pods_PenguinPay2_PenguinPay2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2D5E244A1B0283F6823622 /* Pods_PenguinPay2_PenguinPay2UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B3E4B1C227E8FC4700F89E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3E4B1A327E8FC4600F89E8A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B3E4B1AA27E8FC4600F89E8A;
-			remoteInfo = PenguinPay2;
-		};
-		B3E4B1CD27E8FC4700F89E8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B3E4B1A327E8FC4600F89E8A /* Project object */;
 			proxyType = 1;
@@ -47,20 +61,40 @@
 		50C32791BE2A06ED2BD7204F /* Pods-PenguinPay2-PenguinPay2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PenguinPay2-PenguinPay2UITests.debug.xcconfig"; path = "Target Support Files/Pods-PenguinPay2-PenguinPay2UITests/Pods-PenguinPay2-PenguinPay2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F2D5E244A1B0283F6823622 /* Pods_PenguinPay2_PenguinPay2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PenguinPay2_PenguinPay2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4167172149192F9E5AEF77 /* Pods-PenguinPay2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PenguinPay2Tests.debug.xcconfig"; path = "Target Support Files/Pods-PenguinPay2Tests/Pods-PenguinPay2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B34ED15327ECB4C9005A366F /* SendTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTransactionViewModel.swift; sourceTree = "<group>"; };
+		B34ED15527ECB4F1005A366F /* CountriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewController.swift; sourceTree = "<group>"; };
+		B34ED15727ECB51C005A366F /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		B34ED15927ECB534005A366F /* CountriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewModel.swift; sourceTree = "<group>"; };
+		B34ED15B27ECB572005A366F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		B34ED15D27ECB587005A366F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B34ED15F27ECB9D9005A366F /* UIButton+Enable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Enable.swift"; sourceTree = "<group>"; };
+		B34ED16127ED0F75005A366F /* GetCountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountriesService.swift; sourceTree = "<group>"; };
+		B34ED16327ED196C005A366F /* BinaryConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConverterService.swift; sourceTree = "<group>"; };
+		B34ED16527EDFDF8005A366F /* SendTransactionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTransactionViewModelTests.swift; sourceTree = "<group>"; };
+		B34ED16727EE23DB005A366F /* GetExchangeRateServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeRateServiceMock.swift; sourceTree = "<group>"; };
+		B34ED16927EE2435005A366F /* BinaryConverterServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConverterServiceMock.swift; sourceTree = "<group>"; };
+		B34ED16B27EE246E005A366F /* GetCountriesServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountriesServiceMock.swift; sourceTree = "<group>"; };
+		B34ED16D27EE2545005A366F /* BinaryConverterServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConverterServiceTests.swift; sourceTree = "<group>"; };
+		B34ED16F27EE36F5005A366F /* GetCountriesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountriesServiceTests.swift; sourceTree = "<group>"; };
+		B34ED17127EE3C5B005A366F /* GetExchangeRateServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeRateServiceTests.swift; sourceTree = "<group>"; };
+		B34ED17327EE3E68005A366F /* APIClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientMock.swift; sourceTree = "<group>"; };
+		B34ED17527EE3EBE005A366F /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		B34ED17727EE4922005A366F /* SessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMock.swift; sourceTree = "<group>"; };
+		B34ED17E27EE4A59005A366F /* CountriesListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewModelTests.swift; sourceTree = "<group>"; };
+		B34ED18027EE4C3F005A366F /* DefaultBinaryConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBinaryConverterService.swift; sourceTree = "<group>"; };
+		B34ED18227EE4C56005A366F /* DefaultGetCountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGetCountriesService.swift; sourceTree = "<group>"; };
+		B34ED18427EE4C69005A366F /* DefaultGetExchangeRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGetExchangeRateService.swift; sourceTree = "<group>"; };
+		B34ED18727EE4CA9005A366F /* URLSessionAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAPIClient.swift; sourceTree = "<group>"; };
+		B34ED18F27EE4D30005A366F /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		B3E4B1AB27E8FC4600F89E8A /* PenguinPay2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenguinPay2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E4B1AE27E8FC4600F89E8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E4B1B027E8FC4600F89E8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B3E4B1B227E8FC4600F89E8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B3E4B1B527E8FC4600F89E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3E4B1B227E8FC4600F89E8A /* SendTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTransactionViewController.swift; sourceTree = "<group>"; };
 		B3E4B1B727E8FC4700F89E8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3E4B1BA27E8FC4700F89E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3E4B1BC27E8FC4700F89E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3E4B1C127E8FC4700F89E8A /* PenguinPay2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenguinPay2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E4B1C527E8FC4700F89E8A /* PenguinPay2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinPay2Tests.swift; sourceTree = "<group>"; };
 		B3E4B1C727E8FC4700F89E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3E4B1CC27E8FC4700F89E8A /* PenguinPay2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenguinPay2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E4B1D027E8FC4700F89E8A /* PenguinPay2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinPay2UITests.swift; sourceTree = "<group>"; };
-		B3E4B1D227E8FC4700F89E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3E4B1DE27E8FDFF00F89E8A /* GetExchangeRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeRateService.swift; sourceTree = "<group>"; };
 		EE252A7111ABE4883849C336 /* Pods_PenguinPay2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PenguinPay2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,14 +116,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3E4B1C927E8FC4700F89E8A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B76DAD60A4DB246BA20CD3CB /* Pods_PenguinPay2_PenguinPay2UITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -103,8 +129,124 @@
 				9B4167172149192F9E5AEF77 /* Pods-PenguinPay2Tests.debug.xcconfig */,
 				02116F306600789F3AFE0430 /* Pods-PenguinPay2Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B34ED17B27EE49FD005A366F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B34ED16B27EE246E005A366F /* GetCountriesServiceMock.swift */,
+				B34ED17727EE4922005A366F /* SessionMock.swift */,
+				B34ED17327EE3E68005A366F /* APIClientMock.swift */,
+				B34ED16727EE23DB005A366F /* GetExchangeRateServiceMock.swift */,
+				B34ED16927EE2435005A366F /* BinaryConverterServiceMock.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B34ED17C27EE4A1F005A366F /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B34ED17527EE3EBE005A366F /* APIClientTests.swift */,
+				B34ED16D27EE2545005A366F /* BinaryConverterServiceTests.swift */,
+				B34ED16F27EE36F5005A366F /* GetCountriesServiceTests.swift */,
+				B34ED17127EE3C5B005A366F /* GetExchangeRateServiceTests.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		B34ED17D27EE4A3F005A366F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B34ED16527EDFDF8005A366F /* SendTransactionViewModelTests.swift */,
+				B34ED17E27EE4A59005A366F /* CountriesListViewModelTests.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B34ED18627EE4C87005A366F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B34ED18427EE4C69005A366F /* DefaultGetExchangeRateService.swift */,
+				B34ED18227EE4C56005A366F /* DefaultGetCountriesService.swift */,
+				B34ED18027EE4C3F005A366F /* DefaultBinaryConverterService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B34ED18927EE4CB9005A366F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B34ED18727EE4CA9005A366F /* URLSessionAPIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B34ED18A27EE4CC2005A366F /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B34ED18927EE4CB9005A366F /* Networking */,
+				B34ED18627EE4C87005A366F /* Service */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		B34ED18B27EE4CD6005A366F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4B1B227E8FC4600F89E8A /* SendTransactionViewController.swift */,
+				B34ED15327ECB4C9005A366F /* SendTransactionViewModel.swift */,
+				B34ED15527ECB4F1005A366F /* CountriesListViewController.swift */,
+				B34ED15927ECB534005A366F /* CountriesListViewModel.swift */,
+				B34ED19227EE4D55005A366F /* Extensions */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B34ED18C27EE4CFA005A366F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B34ED18E27EE4D19005A366F /* Domain */,
+				B34ED18D27EE4D06005A366F /* Networking */,
+				B34ED19127EE4D3D005A366F /* Service */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B34ED18D27EE4D06005A366F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B34ED15D27ECB587005A366F /* APIClient.swift */,
+				B34ED15B27ECB572005A366F /* Session.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B34ED18E27EE4D19005A366F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B34ED15727ECB51C005A366F /* Country.swift */,
+				B34ED18F27EE4D30005A366F /* ExchangeRate.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B34ED19127EE4D3D005A366F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4B1DE27E8FDFF00F89E8A /* GetExchangeRateService.swift */,
+				B34ED16127ED0F75005A366F /* GetCountriesService.swift */,
+				B34ED16327ED196C005A366F /* BinaryConverterService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B34ED19227EE4D55005A366F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B34ED15F27ECB9D9005A366F /* UIButton+Enable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B3E4B1A227E8FC4600F89E8A = {
@@ -112,7 +254,6 @@
 			children = (
 				B3E4B1AD27E8FC4600F89E8A /* PenguinPay2 */,
 				B3E4B1C427E8FC4700F89E8A /* PenguinPay2Tests */,
-				B3E4B1CF27E8FC4700F89E8A /* PenguinPay2UITests */,
 				B3E4B1AC27E8FC4600F89E8A /* Products */,
 				8BF7C8848792438F3F99DB70 /* Pods */,
 				BB3AA71604B6E4A76277D90D /* Frameworks */,
@@ -124,7 +265,6 @@
 			children = (
 				B3E4B1AB27E8FC4600F89E8A /* PenguinPay2.app */,
 				B3E4B1C127E8FC4700F89E8A /* PenguinPay2Tests.xctest */,
-				B3E4B1CC27E8FC4700F89E8A /* PenguinPay2UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,14 +272,14 @@
 		B3E4B1AD27E8FC4600F89E8A /* PenguinPay2 */ = {
 			isa = PBXGroup;
 			children = (
+				B34ED18C27EE4CFA005A366F /* Core */,
+				B34ED18B27EE4CD6005A366F /* Presentation */,
+				B34ED18A27EE4CC2005A366F /* Infrastructure */,
 				B3E4B1AE27E8FC4600F89E8A /* AppDelegate.swift */,
 				B3E4B1B027E8FC4600F89E8A /* SceneDelegate.swift */,
-				B3E4B1B227E8FC4600F89E8A /* ViewController.swift */,
-				B3E4B1B427E8FC4600F89E8A /* Main.storyboard */,
 				B3E4B1B727E8FC4700F89E8A /* Assets.xcassets */,
 				B3E4B1B927E8FC4700F89E8A /* LaunchScreen.storyboard */,
 				B3E4B1BC27E8FC4700F89E8A /* Info.plist */,
-				B3E4B1DE27E8FDFF00F89E8A /* GetExchangeRateService.swift */,
 			);
 			path = PenguinPay2;
 			sourceTree = "<group>";
@@ -147,19 +287,12 @@
 		B3E4B1C427E8FC4700F89E8A /* PenguinPay2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B3E4B1C527E8FC4700F89E8A /* PenguinPay2Tests.swift */,
+				B34ED17B27EE49FD005A366F /* Utilities */,
+				B34ED17D27EE4A3F005A366F /* Presentation */,
+				B34ED17C27EE4A1F005A366F /* Infrastructure */,
 				B3E4B1C727E8FC4700F89E8A /* Info.plist */,
 			);
 			path = PenguinPay2Tests;
-			sourceTree = "<group>";
-		};
-		B3E4B1CF27E8FC4700F89E8A /* PenguinPay2UITests */ = {
-			isa = PBXGroup;
-			children = (
-				B3E4B1D027E8FC4700F89E8A /* PenguinPay2UITests.swift */,
-				B3E4B1D227E8FC4700F89E8A /* Info.plist */,
-			);
-			path = PenguinPay2UITests;
 			sourceTree = "<group>";
 		};
 		BB3AA71604B6E4A76277D90D /* Frameworks */ = {
@@ -214,26 +347,6 @@
 			productReference = B3E4B1C127E8FC4700F89E8A /* PenguinPay2Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B3E4B1CB27E8FC4700F89E8A /* PenguinPay2UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B3E4B1DB27E8FC4700F89E8A /* Build configuration list for PBXNativeTarget "PenguinPay2UITests" */;
-			buildPhases = (
-				F542F076C86D8A838F39B554 /* [CP] Check Pods Manifest.lock */,
-				B3E4B1C827E8FC4700F89E8A /* Sources */,
-				B3E4B1C927E8FC4700F89E8A /* Frameworks */,
-				B3E4B1CA27E8FC4700F89E8A /* Resources */,
-				334C0C5971CC0CB11282D8FE /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B3E4B1CE27E8FC4700F89E8A /* PBXTargetDependency */,
-			);
-			name = PenguinPay2UITests;
-			productName = PenguinPay2UITests;
-			productReference = B3E4B1CC27E8FC4700F89E8A /* PenguinPay2UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,10 +360,6 @@
 						CreatedOnToolsVersion = 12.5;
 					};
 					B3E4B1C027E8FC4700F89E8A = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = B3E4B1AA27E8FC4600F89E8A;
-					};
-					B3E4B1CB27E8FC4700F89E8A = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = B3E4B1AA27E8FC4600F89E8A;
 					};
@@ -271,7 +380,6 @@
 			targets = (
 				B3E4B1AA27E8FC4600F89E8A /* PenguinPay2 */,
 				B3E4B1C027E8FC4700F89E8A /* PenguinPay2Tests */,
-				B3E4B1CB27E8FC4700F89E8A /* PenguinPay2UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -283,18 +391,10 @@
 			files = (
 				B3E4B1BB27E8FC4700F89E8A /* LaunchScreen.storyboard in Resources */,
 				B3E4B1B827E8FC4700F89E8A /* Assets.xcassets in Resources */,
-				B3E4B1B627E8FC4600F89E8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B3E4B1BF27E8FC4700F89E8A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3E4B1CA27E8FC4700F89E8A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,23 +424,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		334C0C5971CC0CB11282D8FE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PenguinPay2-PenguinPay2UITests/Pods-PenguinPay2-PenguinPay2UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PenguinPay2-PenguinPay2UITests/Pods-PenguinPay2-PenguinPay2UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PenguinPay2-PenguinPay2UITests/Pods-PenguinPay2-PenguinPay2UITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5FA5F332C718DF21ADD0C72E /* [CP] Embed Pods Frameworks */ = {
@@ -399,28 +482,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F542F076C86D8A838F39B554 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PenguinPay2-PenguinPay2UITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -428,10 +489,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E4B1B327E8FC4600F89E8A /* ViewController.swift in Sources */,
+				B34ED15827ECB51C005A366F /* Country.swift in Sources */,
+				B3E4B1B327E8FC4600F89E8A /* SendTransactionViewController.swift in Sources */,
+				B34ED15627ECB4F1005A366F /* CountriesListViewController.swift in Sources */,
+				B34ED15E27ECB587005A366F /* APIClient.swift in Sources */,
+				B34ED16427ED196C005A366F /* BinaryConverterService.swift in Sources */,
+				B34ED15A27ECB534005A366F /* CountriesListViewModel.swift in Sources */,
 				B3E4B1AF27E8FC4600F89E8A /* AppDelegate.swift in Sources */,
 				B3E4B1B127E8FC4600F89E8A /* SceneDelegate.swift in Sources */,
+				B34ED15427ECB4C9005A366F /* SendTransactionViewModel.swift in Sources */,
+				B34ED16027ECB9D9005A366F /* UIButton+Enable.swift in Sources */,
+				B34ED18827EE4CA9005A366F /* URLSessionAPIClient.swift in Sources */,
+				B34ED16227ED0F75005A366F /* GetCountriesService.swift in Sources */,
+				B34ED18527EE4C69005A366F /* DefaultGetExchangeRateService.swift in Sources */,
+				B34ED18127EE4C3F005A366F /* DefaultBinaryConverterService.swift in Sources */,
 				B3E4B1DF27E8FDFF00F89E8A /* GetExchangeRateService.swift in Sources */,
+				B34ED18327EE4C56005A366F /* DefaultGetCountriesService.swift in Sources */,
+				B34ED19027EE4D30005A366F /* ExchangeRate.swift in Sources */,
+				B34ED15C27ECB572005A366F /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,15 +514,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E4B1C627E8FC4700F89E8A /* PenguinPay2Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3E4B1C827E8FC4700F89E8A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B3E4B1D127E8FC4700F89E8A /* PenguinPay2UITests.swift in Sources */,
+				B34ED16827EE23DB005A366F /* GetExchangeRateServiceMock.swift in Sources */,
+				B34ED17827EE4922005A366F /* SessionMock.swift in Sources */,
+				B34ED17427EE3E68005A366F /* APIClientMock.swift in Sources */,
+				B34ED16627EDFDF8005A366F /* SendTransactionViewModelTests.swift in Sources */,
+				B34ED16A27EE2435005A366F /* BinaryConverterServiceMock.swift in Sources */,
+				B34ED16E27EE2545005A366F /* BinaryConverterServiceTests.swift in Sources */,
+				B34ED16C27EE246E005A366F /* GetCountriesServiceMock.swift in Sources */,
+				B34ED17627EE3EBE005A366F /* APIClientTests.swift in Sources */,
+				B34ED17027EE36F5005A366F /* GetCountriesServiceTests.swift in Sources */,
+				B34ED17F27EE4A59005A366F /* CountriesListViewModelTests.swift in Sources */,
+				B34ED17227EE3C5B005A366F /* GetExchangeRateServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,22 +536,9 @@
 			target = B3E4B1AA27E8FC4600F89E8A /* PenguinPay2 */;
 			targetProxy = B3E4B1C227E8FC4700F89E8A /* PBXContainerItemProxy */;
 		};
-		B3E4B1CE27E8FC4700F89E8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B3E4B1AA27E8FC4600F89E8A /* PenguinPay2 */;
-			targetProxy = B3E4B1CD27E8FC4700F89E8A /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B3E4B1B427E8FC4600F89E8A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B3E4B1B527E8FC4600F89E8A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B3E4B1B927E8FC4700F89E8A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -688,48 +752,6 @@
 			};
 			name = Release;
 		};
-		B3E4B1DC27E8FC4700F89E8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50C32791BE2A06ED2BD7204F /* Pods-PenguinPay2-PenguinPay2UITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82GZ32TP2H;
-				INFOPLIST_FILE = PenguinPay2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "matias-glessi.PenguinPay2UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PenguinPay2;
-			};
-			name = Debug;
-		};
-		B3E4B1DD27E8FC4700F89E8A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 422C7531CACC6D8D962DAC5D /* Pods-PenguinPay2-PenguinPay2UITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82GZ32TP2H;
-				INFOPLIST_FILE = PenguinPay2UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "matias-glessi.PenguinPay2UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PenguinPay2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -756,15 +778,6 @@
 			buildConfigurations = (
 				B3E4B1D927E8FC4700F89E8A /* Debug */,
 				B3E4B1DA27E8FC4700F89E8A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B3E4B1DB27E8FC4700F89E8A /* Build configuration list for PBXNativeTarget "PenguinPay2UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B3E4B1DC27E8FC4700F89E8A /* Debug */,
-				B3E4B1DD27E8FC4700F89E8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
